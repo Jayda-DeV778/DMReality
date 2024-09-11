@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+</head>
+<body>
+   
+<div class="profile-list">
+    <!-- Profile list items with images to mimic WhatsApp profile contacts -->
+    <div class="profile" onclick="switchProfile('profile1')">
+        <img src="https://via.placeholder.com/40" alt="User 1">
+        User 1
+    </div>
+    <div class="profile" onclick="switchProfile('profile2')">
+        <img src="https://via.placeholder.com/40" alt="User 2">
+        User 2
+    </div>
+    <div class="profile" onclick="switchProfile('profile3')">
+        <img src="https://via.placeholder.com/40" alt="User 3">
+        User 3
+    </div>
+    <div class="profile" onclick="switchProfile('profile4')">
+        <img src="https://via.placeholder.com/40" alt="User 4">
+        User 4
+    </div>
+    <!-- Add more profiles as needed -->
+</div>
+
+<div class="chatbox-container">
+    <div class="chat-body" id="chat-body">
+        <!-- Chat messages will be dynamically updated -->
+    </div>
+    <div class="chat-footer">
+        <input type="text" placeholder="Type a message..." id="message-input">
+        <button onclick="sendMessage()"><span class="material-symbols-outlined">send </span></button>
+    </div>
+</div>
+
+</body>
+</html>
+
+<script src="chat.js"></script>

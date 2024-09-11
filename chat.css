@@ -1,0 +1,123 @@
+body {
+    background-color: #1c1c1c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+
+/* Sidebar for profile list with scrollable overflow */
+.profile-list {
+    width: 25%;
+    background-color: #2e2e2e;
+    border-right: 2px solid #e50914;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    overflow-y: auto;
+}
+
+.profile {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #4e4e4e;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile:hover {
+    background-color: #e50914;
+}
+
+/* Chat area */
+.chatbox-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 20px;
+    background-color: #1c1c1c;
+    overflow-y: scroll;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Chat bubbles styling to look like WhatsApp */
+.message {
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    font-size: 16px;
+    position: relative;
+}
+
+.message.sent {
+    background-color: #e50914; /* WhatsApp green for sent */
+    color: white;
+    margin-left: auto;
+    text-align: left;
+}
+
+.message.received {
+    background-color: #4e4e4e;
+    color: white;
+    margin-right: auto;
+    text-align: left;
+}
+
+.chat-footer {
+    padding: 20px;
+    background-color: #2e2e2e;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #e50914;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #4e4e4e;
+    color: white;
+    font-size: 16px;
+}
+
+.chat-footer button {
+    background-color: #e50914; /* WhatsApp green for send button */
+    color: white;
+    padding: 15px 20px;
+    margin-left: 10px;
+    align-content: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.chat-footer button:hover {
+    background-color:  #4c0206;;
+}
+
+.chat-footer button:focus {
+    outline: none;
+}
